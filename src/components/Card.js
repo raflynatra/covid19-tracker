@@ -15,8 +15,13 @@ function Card(props) {
           <p className="card-text">
             Number of {props.title} {props.text} COVID-19
           </p>
-          {props.region ? "" : <p className="card-text">{props.region}</p>}
+          {props.region === undefined ? (
+            ""
+          ) : (
+            <p className="card-text">{props.region}</p>
+          )}
         </div>
+        <div className={`card-footer ${props.footerBg}`}></div>
       </div>
     </div>
   );

@@ -71,6 +71,7 @@ function App() {
         <div className="d-flex justify-content-center ">
           <Card
             addClass="bg-primary bg-opacity-25"
+            footerBg="bg-primary"
             type="Infected"
             title="Infected"
             text="cases of"
@@ -80,6 +81,7 @@ function App() {
           />
 
           <Card
+            footerBg="bg-success"
             type="Recovered"
             title="Recovered"
             text="from"
@@ -90,6 +92,7 @@ function App() {
 
           <Card
             addClass="bg-danger bg-opacity-25"
+            footerBg="bg-danger"
             type="deaths"
             title="Death"
             text="caused by"
@@ -125,6 +128,7 @@ function App() {
         <div className="d-flex justify-content-center ">
           <Card
             addClass="bg-primary bg-opacity-25"
+            footerBg="bg-primary"
             type="Infected"
             title="Infected"
             text="cases of"
@@ -135,6 +139,7 @@ function App() {
           />
 
           <Card
+            footerBg="bg-success"
             type="Recovered"
             title="Recovered"
             text="from"
@@ -146,6 +151,7 @@ function App() {
 
           <Card
             addClass="bg-danger bg-opacity-25"
+            footerBg="bg-danger"
             type="deaths"
             title="Death"
             text="caused by"
@@ -157,6 +163,7 @@ function App() {
 
           <Card
             addClass="bg-warning bg-opacity-25"
+            footerBg="bg-warning"
             type="Active"
             title="Active"
             text="cases of"
