@@ -63,7 +63,7 @@ function App2() {
   }, []);
 
   return (
-    <div className="container py-5">
+    <div className="container py-4">
       <div className="d-flex justify-content-center">
         <img src={covidLogo} alt="test" className="" />
       </div>
