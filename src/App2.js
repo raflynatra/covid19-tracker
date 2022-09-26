@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import moment from "moment";
 import "moment/locale/id";
+import CountUp from "react-countup";
 
 import covidLogo from "./img/logo.jfif";
 import Chart from "./components/Chart";
@@ -132,10 +133,20 @@ function App2() {
               </div>
               <div className="card-body">
                 <p className="card-text text-warning">
-                  <strong>Active :</strong> {countryDatas.active}
+                  <strong>Active :</strong>{" "}
+                  <CountUp
+                    end={countryDatas.active}
+                    separator=","
+                    duration={1.75}
+                  />
                 </p>
                 <p className="card-text text-primary">
-                  <strong>Infected :</strong> {countryDatas.confirmed}
+                  <strong>Infected :</strong>{" "}
+                  <CountUp
+                    end={countryDatas.confirmed}
+                    separator=","
+                    duration={1.75}
+                  />
                 </p>
                 <p className="card-text text-success">
                   <strong>Recovered :</strong>{" "}
@@ -144,7 +155,12 @@ function App2() {
                     : countryDatas.recovered}
                 </p>
                 <p className="card-text text-danger">
-                  <strong>Death :</strong> {countryDatas.deaths}
+                  <strong>Death :</strong>{" "}
+                  <CountUp
+                    end={countryDatas.deaths}
+                    separator=","
+                    duration={1.75}
+                  />
                 </p>
               </div>
               <div className="card-footer">

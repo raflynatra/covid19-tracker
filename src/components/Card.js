@@ -1,4 +1,5 @@
 import React from "react";
+import CountUp from "react-countup";
 
 function Card(props) {
   return (
@@ -8,7 +9,11 @@ function Card(props) {
           <h5 className="card-title">{props.title}</h5>
           <h4 className="card-title mb-2">
             Total :{" "}
-            {props.total ? new Intl.NumberFormat().format(props.total) : "0"}{" "}
+            {props.total ? (
+              <CountUp end={props.total} separator="," duration={1.75} />
+            ) : (
+              "0"
+            )}{" "}
           </h4>
           <p className="card-text">Last Update at.</p>
           <p className="card-text">{`${props.date} : ${props.time}`}</p>
